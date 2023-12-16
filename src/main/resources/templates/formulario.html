@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <h2>Cadastro de Usuários</h2>
+<form th:action="@{/save]}" th:object="${ser}" method="post"></form>>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" th:field "*{nome}" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" th:field="*{email}" required>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
